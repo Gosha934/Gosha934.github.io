@@ -1,0 +1,44 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#554902, #ecca04);
+}
+.rights{
+    font-size: 3em;    
+}
+.rights p{
+    background-color: rgba(222, 184, 135, 0.397);
+    margin-top: 60px;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3em;
+}
+.socials a{
+    text-decoration: none;
+    color: aqua;
+    background-color: rgba(222, 184, 135, 0.397);
+}
+.picture img{
+    width: 150px;
+}
+@media(max-width: 768px){
+    footer{
+        display: block;
+    }
+    .socials {
+        margin-top: 20px;
+    }
+    .socials a{
+        color: aqua;
+    }
+    .picture {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .rights p{
+        margin-top: 0;
+    }
+}

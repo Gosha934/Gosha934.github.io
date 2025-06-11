@@ -1,0 +1,106 @@
+header{
+    display: flex;
+    width: 100%;
+    background: linear-gradient(#32d8ee, #8e4af5, #5b25ad);
+    background: linear-gradient(#32d8ee, #8e4af5, #5b25ad);
+    border-bottom-style: groove;
+    border-width: 2px;
+    
+}
+.main-header{
+    display: flex;
+    width: 100%;
+    background: linear-gradient(#32d8ee, #8e4af5, #5b25ad);
+}
+.logo{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.logo img{
+    width: 100px;
+    border-radius: 40px;
+}
+.list-logo{
+    display: inline-block; 
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-logo ul{
+    list-style: none;
+    margin-top: 35px;
+}
+.list-logo ul li{
+    display: inline;
+    font-size: 2em;
+    margin-left: 6px;
+    padding: 5px;
+}
+.list-logo ul li a{
+    text-decoration: none;
+    color: black;
+}
+.list-logo ul .active{
+    background-color: aquamarine;
+    border-radius: 30px;
+}
+
+.list-logo ul li:hover{
+    background-color: aquamarine;
+    border-radius: 30px;
+    padding: 5px;
+}
+.video-header{
+    display: inline-block;
+}
+.video-header video{
+    width: 100px;
+    height: 115px;
+    padding-top: 10px;
+    border-radius: 40px;
+}
+.icons{
+    display: inline-block;
+    background-color: rgba(31, 230, 154, 0.644);
+    margin-left: 10px;
+    padding-left: 10px;
+    border-style: solid;
+    border-radius: 40px;
+    border-width: 0;
+}
+.icons img{
+    width: 70px;
+    margin-top: 30px;
+}
+
+
+@media(max-width: 768px){
+    header{
+        display: block;
+    }
+    .main-header{
+        display: block;     
+    }
+    .logo{
+        display: block;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 0;
+        padding-top: 10px;
+    }
+    .list-logo{
+        display: block;
+        margin-left: 0;
+    }
+    .list-logo ul{
+        display: block;
+        list-style: disc;
+        list-style-type: disc;
+    }
+    .list-logo ul li{
+    display: block;
+    font-size: 2em;
+    text-align: center;
+}
+
+}

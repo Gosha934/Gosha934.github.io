@@ -1,0 +1,108 @@
+
+.main-section{
+    background: linear-gradient(#32d8ee, #8e4af5, #5b25ad);
+    display: flex;
+}
+h2{
+    text-align: center;
+    font-size: 3em;
+    background-color: chartreuse;
+}
+.main-section .left-container{
+    background: linear-gradient(#e77f60, #612311);
+    padding: 5px;
+    margin: 5px;
+    
+}
+.main-section .left-container .skrillex{
+    margin: 5px;
+    text-align: center;
+    background-color: chartreuse;
+}
+.main-section .left-container .audio{
+    margin-top: 40px;
+}
+.main-section .left-container .audio audio{
+    width: 100%;
+}
+
+.main-section .left-container .lc-1i{
+    width: 100%;    
+}
+.main-section .left-container .lc-1i img{
+    width: 100%;  
+    margin-top: 70px;  
+    border-radius: 30px;
+}
+.main-section .mid-container{
+    display: inline-block;
+    background: linear-gradient(#b07bff, #3d1d6d);
+    padding: 5px;
+    margin: 5px;
+}
+
+.main-section>.mid-container>.first-picture{
+    float: right;
+}
+.main-section>.mid-container>.first-picture img{
+    width: 200px;
+}
+.main-section>.mid-container>.second-picture{
+    float: left;
+    margin: 10px;
+    margin-left: 0;
+}
+.main-section>.mid-container>.second-picture img{
+    width: 200px;
+}
+
+
+.main-section>.mid-container>.third-picture{
+    text-align: center;
+    margin: 10px;
+    
+   
+}
+.main-section>.mid-container>.third-picture img{
+    width: 200px;
+}
+
+.main-section .right-container{
+    display: inline-block;
+    background-color: blue;
+    padding: 5px;
+    margin: 5px;
+}
+.main-section .right-container .rc-fi,
+.main-section .right-container .rc-si,
+.main-section .right-container .rc-ti,
+.main-section .right-container .rc-4i,
+.main-section .right-container .rc-5i,
+.main-section .right-container .rc-6i,
+.main-section .right-container .rc-7i,
+.main-section .right-container .rc-8i{
+    width: 100%;
+}
+.main-section .right-container .rc-fi img,
+.main-section .right-container .rc-si img,
+.main-section .right-container .rc-ti img,
+.main-section .right-container .rc-4i img,
+.main-section .right-container .rc-5i img,
+.main-section .right-container .rc-6i img,
+.main-section .right-container .rc-7i img,
+.main-section .right-container .rc-8i img{
+    width: 100%;
+}
+.main-section .right-container .list-skrillex ul{
+    list-style: none;
+    text-align: center;
+    font-size: 4em;
+    margin-top: 20px;
+    background-color: burlywood;
+}
+@media(max-width: 768px){
+    
+    .main-section .left-container .skrillex{
+    margin: 0;  
+}
+}

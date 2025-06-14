@@ -1,17 +1,21 @@
-
 .main-section{
     background: linear-gradient(#32d8ee, #8e4af5, #5b25ad);
     display: flex;
+}
+.main-section .mid-container .title{
+    width: 100%;
 }
 h2{
     text-align: center;
     font-size: 3em;
     background-color: chartreuse;
+    width: 100%;
 }
 .main-section .left-container{
     background: linear-gradient(#e77f60, #612311);
     padding: 5px;
     margin: 5px;
+    width: 30%;
     
 }
 .main-section .left-container .skrillex{
@@ -39,6 +43,7 @@ h2{
     background: linear-gradient(#b07bff, #3d1d6d);
     padding: 5px;
     margin: 5px;
+    width: 50%;
 }
 
 .main-section>.mid-container>.first-picture{
@@ -72,6 +77,7 @@ h2{
     background-color: blue;
     padding: 5px;
     margin: 5px;
+    width: 15%;
 }
 .main-section .right-container .rc-fi,
 .main-section .right-container .rc-si,
@@ -100,9 +106,29 @@ h2{
     margin-top: 20px;
     background-color: burlywood;
 }
+
 @media(max-width: 768px){
     
     .main-section .left-container .skrillex{
     margin: 0;  
+}
+h2{
+    font-size: 2em;
+}
+.main-section .left-container,
+.main-section .mid-container,
+.main-section .right-container{
+    margin: 2px;
+    padding: 2px;
+}
+
+.main-section>.mid-container>.first-picture,
+.main-section>.mid-container>.first-picture img,
+.main-section>.mid-container>.second-picture,
+.main-section>.mid-container>.second-picture img
+.main-section>.mid-container>.third-picture,
+.main-section>.mid-container>.third-picture img{
+    width: 100%;
+    padding: 2px;
 }
 }

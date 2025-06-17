@@ -1,0 +1,73 @@
+section{
+    background: radial-gradient(#363636, #1f1e1e);
+}
+
+.filters-bar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    padding: 20px;
+    background: radial-gradient(#646363, #382d2d);
+}
+
+.filters-bar_filter img{
+    width: 20px;
+    display: inline;
+}
+.filters-bar_filter p{
+    display: inline;
+    
+}
+.grid-card{
+    display: grid;
+    background-color: #1f1e1e;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+}
+
+.grid-grid_card-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-grid_card-link p{
+    font-size: 5em;
+    color: aquamarine;
+}
+.grid-grid_card-link h2{
+    color: yellow;
+}
+
+picture img{
+    border-radius: 5%;
+}
+.pizzas-less-than1300{
+    display: none;
+}
+@media(max-width: 1365px){
+    .grid-card{
+    display: grid;    
+    grid-template-columns: 1fr; 
+    place-items: center;
+    padding-bottom: 30px;
+}
+#filters{
+    display: none;
+}
+.filters-bar_filter img{
+    width: 20%;
+    float: right;
+}
+picture img{
+    width: 100%;
+}
+.pizzas-more-than1300{
+    display: none;
+}
+.pizzas-less-than1300{
+    display: flex;
+}
+
+}
+
+

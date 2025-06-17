@@ -1,0 +1,143 @@
+.open{
+    display: flex !important;
+}
+
+.main-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#181717, #332f2f)
+}
+.main-header .logo{
+    width: 100px;
+    margin: 5px;
+}
+.main-header .logo img{
+    width: 100%;
+    border-radius: 50%;
+}
+.list-logo li{
+    list-style: none;
+    display: inline;
+    font-size: 2em;
+    padding: 0,5px;
+    border-style: solid;
+    border-color: #474444;
+    border-radius: 20%;
+}
+.list-logo li a:hover{
+    color: aqua;
+}
+a{
+    text-decoration: none;
+}
+.info{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.adress img{
+    width: 17px;
+    background-color: cadetblue;
+    border-radius: 50%;
+}
+
+
+
+.adress h2{
+    display: inline;
+    color: aquamarine;
+}
+
+.time img{
+    width: 17px;  
+    background-color: cadetblue;
+    border-radius: 50%;
+}
+.time h2{
+    display: inline;
+    color:aquamarine;
+}
+.video {
+    width: 100px;
+    border-radius: 20px;
+}
+
+    .burger{
+        display: none;
+        position: relative;
+        
+        z-index: 60;
+        align-items: center;
+        justify-content: flex-start;
+        width: 30px;
+        height: 18px;
+        left: 0;
+    }
+    .burger span{
+        height: 2px;
+        width: 80%;
+        transform: scale(1);
+        background-color: #FAF6F2;
+    }
+    .burger::before, .burger::after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 80%;
+        background-color: #FAF6F2;
+        transition: all 0.3s, ease 0s;
+    }
+    .burger::before{top: 0;}
+    .burger::after{bottom: 0;}
+
+    .burger.active span{transform: scale(0);}
+
+    .burger.active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    }
+    .burger.active::after{
+        bottom: 50%;
+        transform: rotate(45deg) translate(0, 50%);
+    }
+    nav{display: none;}
+
+
+@media(max-width: 1365px)
+{
+    .main-header{
+        justify-content: space-between;
+    }
+    .list-logo li{
+        display: none;
+    }
+    .info{
+        display: none;
+    }
+    .burger{display: flex;}
+
+    .nav{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 90%;
+        width: 90%;
+        top: 0; bottom: 0; right: 0; left: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: #181717;
+    }
+    .nav li{
+        list-style: none;
+        font-size: 3em;
+        margin-top: 30px;
+    }
+    .nav li a{
+        color: yellow;
+        border-style: solid;
+        border-radius: 20%;
+    }
+    
+}
+

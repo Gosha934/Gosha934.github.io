@@ -1,0 +1,39 @@
+body{
+    background: radial-gradient(#a77171, #111);
+    cursor: pointer;
+}
+.letter{
+    display: inline-block;
+    border: solid;
+    border-radius: 20px;
+}
+#alphabet{
+    text-align: center;
+    font-size: 2em;
+}
+#theme{
+    text-align: center;
+}
+#word{
+    text-align: center;
+}
+.again{
+    text-align: center;
+}
+.again>p{
+    display: inline;
+    border: solid;
+    border-radius: 20px;
+}
+
+.ds, #newTheme, #word>p{
+    display: inline;
+}
+.newP{
+    margin: 5px;
+}
+@media(max-width: 500px){
+    #alphabet{
+        font-size: 1em;
+    }
+}

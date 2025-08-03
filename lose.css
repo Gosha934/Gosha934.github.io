@@ -1,0 +1,16 @@
+#lose{
+    display: none;
+    text-align: center;
+}
+#win{
+    text-align: center;
+    display: none;
+}
+.nine{
+    text-align: center;
+
+}
+.nine>img{
+    width: 80px;
+    margin-top: 20px;
+}

@@ -3,8 +3,6 @@ const rusAlphabet = [
     "у", "ф", "х", "ц", "ч", "ш", "щ", "ъ", "ы", "ь", "э", "ю", "я" 
 ];
 
-
-
 let randomWords = {
     Овощи: "перец",
     Лабинск: "артур геворкян",
@@ -13,8 +11,25 @@ let randomWords = {
     Фрукты: "яблочко",
     Мелкий_пиздюк: "мефедроновый карлик",
     Хутор_кубанский: "площадка и кубаночка",
-    Узбекистан: "женечка",
-    Чипиздрик: "мефедрон"
+    Майкоп: "тётя люся",
+    ЗД_Моделирование: "ретопология",
+    Металл: "бериллий",
+    Математика: "переменная",
+    Компуктер: "мать",
+    Школьная_52: "заливать пол целый год",
+    Раджеб: "армрестлинг",
+    Азербайджан: "баха",
+    Рыбалка: "дэнчик",
+    Приора: "степан",
+    Белореченск: "очаково",
+    Марк_Семиземельников: "выебоны",
+    Орган_человека: "мозг",
+    Аниме: "говно",
+    Сплит_система: "вентилятор",
+    Боевые_искусства: "чхарёк",
+    Спорт: "гири",
+    Администратор: "алинка"
+
 };
 let arrayOfRandomWords = Object.entries(randomWords);
 
@@ -23,7 +38,7 @@ let attempt = document.getElementById("attempts");
 let theme = document.getElementById("newTheme");
 let word = document.getElementById("word");
 let myAlphabet = document.getElementById("alphabet");
-let random = Math.floor(Math.random() * 9);
+let random = Math.floor(Math.random() * 25);
 let newReload = document.getElementById("reload");
 let startAgain = document.getElementById("startAgain");
 let lose = document.getElementById("lose");
@@ -31,7 +46,8 @@ let mainGame = document.getElementById("g");
 let w = document.getElementById("finalWord");
 let winblt = document.getElementById("winAndAgain")
 let win = document.getElementById("win");
-let a = 7;
+let checkWord = document.getElementById("check");
+let a = 7; //count of attempts
 
 theme.textContent = arrayOfRandomWords[random][0];
 let splitWords = arrayOfRandomWords[random][1].split("");
@@ -52,7 +68,6 @@ for(let i = 0; i < splitWords.length; i++){
         word.children[i].className = "newP";
     }
     
-    
 }
 for(let i = 0; i < 33; i++){
     myAlphabet.children[i].textContent = rusAlphabet[i];
@@ -61,6 +76,8 @@ for(let i = 0; i < 33; i++){
 newReload.addEventListener("click", reloading);
 startAgain.addEventListener("click", reloading);
 winblt.addEventListener("click", reloading);
+checkWord.addEventListener("click", checking);
+
 let fArray = [];
 
 function add(){
@@ -79,16 +96,19 @@ function removeSpaces(element){
 }
 
 let arrayWithoutSpaces = splitWords;
-let a = arrayWithoutSpaces.filter(removeSpaces);
+let ar = arrayWithoutSpaces.filter(removeSpaces);
 
-if(fArray.join("") === a.join("")){
+if(fArray.join("") === ar.join("")){
     mainGame.style.display = "none";
     win.style.display = "block";
 }
 
+
     for(let i = 0; i < splitWords.length; i++){
         if(splitWords.indexOf(this.textContent) === -1){
-            attempt.textContent = a - 1;
+            if(this.textContent != "_"){
+                attempt.textContent = a - 1;
+            }
             if(attempt.textContent === "0"){
                 mainGame.style.display = "none";
                 lose.style.display = "block";
@@ -106,5 +126,6 @@ if(fArray.join("") === a.join("")){
 function reloading(){
     window.location.reload();
 }
-
-
+function checking(){
+    w.style.display = "block";
+}

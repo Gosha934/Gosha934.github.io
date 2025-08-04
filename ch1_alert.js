@@ -74,14 +74,17 @@ function add(){
         }
 }
 
+function removeSpaces(element){
+    return element != " ";
+}
 
+let arrayWithoutSpaces = splitWords;
+let a = arrayWithoutSpaces.filter(removeSpaces);
 
-if(fArray.join("") === splitWords.join("")){
+if(fArray.join("") === a.join("")){
     mainGame.style.display = "none";
     win.style.display = "block";
 }
-
-
 
     for(let i = 0; i < splitWords.length; i++){
         if(splitWords.indexOf(this.textContent) === -1){
@@ -103,4 +106,5 @@ if(fArray.join("") === splitWords.join("")){
 function reloading(){
     window.location.reload();
 }
+
 

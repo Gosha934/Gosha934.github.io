@@ -8,9 +8,14 @@
 }
 .nine{
     text-align: center;
-
 }
 .nine>img{
     width: 80px;
     margin-top: 20px;
+}
+#finalWord{
+    display: none;
+}
+#check{
+    margin-bottom: 15px;
 }

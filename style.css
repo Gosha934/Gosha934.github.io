@@ -1,0 +1,25 @@
+
+#inp{
+    width: 145px;
+}
+#grid{
+    width: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#grid div{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: center;
+    align-items: center;
+}
+#grid div:hover{
+    background-color: rgb(221, 213, 213);
+}
+#info{
+    margin-top: 10px;
+}
+.number{
+    color: blue;
+}
